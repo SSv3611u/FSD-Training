@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusBridge | Student Management Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">CB</span> CampusBridge</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Computer Science</a></li>
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+              <li><a class="dropdown-item" href="#">Mechanical</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="campusCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active hero-slide" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');">
+        <div class="container hero-content text-white">
+          <h1 class="display-5 fw-bold">Welcome to CampusBridge College</h1>
+          <p class="lead col-lg-7">A responsive student management portal for registration, profiles, attendance insights, and academic updates.</p>
+          <a class="btn btn-primary btn-lg" href="registration.html">Register Now</a>
+        </div>
+      </div>
+      <div class="carousel-item hero-slide" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1600&q=80');">
+        <div class="container hero-content text-white">
+          <h2 class="display-6 fw-bold">Manage Student Information Anywhere</h2>
+          <p class="lead col-lg-7">Mobile-friendly dashboards and clean Bootstrap components keep daily campus work organized.</p>
+          <a class="btn btn-light btn-lg" href="dashboard.html">View Dashboard</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <main>
+    <section class="py-5" id="about">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <p class="text-primary fw-semibold">Student services</p>
+            <h2 class="h1">Everything students need in one portal</h2>
+            <p class="text-body-secondary">CampusBridge helps college teams handle student records, attendance, result updates, and communication from one responsive interface.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end gap-3 mb-4">
+          <div>
+            <h2 class="h1 mb-1">Portal Features</h2>
+            <p class="text-body-secondary mb-0">Key services designed for students and administrators.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Student using a laptop">
+              <div class="card-body">
+                <h3 class="h5 card-title">Student Registration</h3>
+                <p class="card-text">Collect student details, branch information, photos, and terms approval with Bootstrap validation.</p>
+                <a href="registration.html" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Students in discussion">
+              <div class="card-body">
+                <h3 class="h5 card-title">Attendance Management</h3>
+                <p class="card-text">Track present and absent students with readable badges, summary cards, and responsive tables.</p>
+                <a href="dashboard.html" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Student writing notes">
+              <div class="card-body">
+                <h3 class="h5 card-title">Results Management</h3>
+                <p class="card-text">Present student performance updates, placement counts, and academic records in a clean dashboard.</p>
+                <a href="profile.html" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="h1 mb-4">Academic Departments</h2>
+        <div class="accordion" id="departmentsAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#deptOne">Computer Science</button></h3>
+            <div id="deptOne" class="accordion-collapse collapse show" data-bs-parent="#departmentsAccordion"><div class="accordion-body">The CSE department focuses on programming, databases, web development, and emerging technologies.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deptTwo">Electronics</button></h3>
+            <div id="deptTwo" class="accordion-collapse collapse" data-bs-parent="#departmentsAccordion"><div class="accordion-body">The ECE department covers circuits, communication systems, embedded systems, and signal processing.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deptThree">Mechanical</button></h3>
+            <div id="deptThree" class="accordion-collapse collapse" data-bs-parent="#departmentsAccordion"><div class="accordion-body">The Mechanical department includes design, manufacturing, thermal engineering, and industrial practices.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">&copy; 2026 CampusBridge College. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"><h2 class="h5 modal-title">Portal Login</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control" required></div>
+            <div class="mb-3"><label class="form-label">Password</label><input type="password" class="form-control" required></div>
+            <button class="btn btn-primary w-100" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
